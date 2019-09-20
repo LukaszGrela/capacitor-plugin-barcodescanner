@@ -1,0 +1,49 @@
+{
+  "name": "capacitor-plugin-barcodescanner",
+  "version": "0.0.1",
+  "description": "Capacitor Plugin to add barcode scanner capabilities",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Lukasz 'Severiaan' Grela",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorPluginBarcodescanner.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LukaszGrela/capacitor-plugin-barcodescanner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LukaszGrela/capacitor-plugin-barcodescanner.git/issues"
+  }
+}
