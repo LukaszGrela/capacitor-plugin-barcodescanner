@@ -6,6 +6,7 @@ import android.content.Intent;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
+import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -25,7 +26,7 @@ public class BarcodeScanner extends Plugin {
         "co.greladesign.plugins.capacitor.event.EVENT_BARCODE_SCANNED";
 
     @PluginMethod()
-    public void scan() {
+    public void scan(PluginCall call) {
         new IntentIntegrator(this.getBridge().getActivity()).initiateScan();
     }
 

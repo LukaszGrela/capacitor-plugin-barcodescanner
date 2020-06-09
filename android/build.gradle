@@ -11,8 +11,8 @@ buildscript {
 apply plugin: 'com.android.library'
 // - MODIFY HERE
 
-def code = 6
-def verName = "0.1.2"
+def code = 7
+def verName = "0.1.3"
 
 // - END OF MODIFICATIONS
 android {
