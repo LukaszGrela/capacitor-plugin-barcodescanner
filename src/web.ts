@@ -1,17 +1,17 @@
-import { WebPlugin } from '@capacitor/core';
-import { BarcodeScannerPlugin } from './definitions';
+import { WebPlugin } from "@capacitor/core";
+import { BarcodeScannerPlugin } from "./definitions";
 
-export class BarcodeScannerWeb extends WebPlugin implements BarcodeScannerPlugin {
+export class BarcodeScannerWeb extends WebPlugin
+  implements BarcodeScannerPlugin {
   constructor() {
     super({
-      name: 'BarcodeScanner',
-      platforms: ['web']
+      name: "BarcodeScanner",
+      platforms: ["web"],
     });
   }
 
-  async echo(options: { value: string }): Promise<{value: string}> {
-    console.log('ECHO', options);
-    return options;
+  scan(): void {
+    console.log("BarcodeScannerWeb.scan");
   }
 }
 
@@ -19,5 +19,5 @@ const BarcodeScanner = new BarcodeScannerWeb();
 
 export { BarcodeScanner };
 
-import { registerWebPlugin } from '@capacitor/core';
+import { registerWebPlugin } from "@capacitor/core";
 registerWebPlugin(BarcodeScanner);
