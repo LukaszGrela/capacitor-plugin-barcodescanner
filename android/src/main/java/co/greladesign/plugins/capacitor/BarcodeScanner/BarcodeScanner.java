@@ -6,7 +6,6 @@ import android.content.Intent;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
-import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
