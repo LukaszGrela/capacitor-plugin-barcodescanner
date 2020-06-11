@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="barcode_camera_permission_reason">BarcodeScanner requiere el permiso de la cámara para ser capaz de código de barras de exploración.</string>
+</resources>
